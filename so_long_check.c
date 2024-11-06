@@ -37,7 +37,7 @@ int	checknrplayers(t_game *game, int height)
 				game->player_x = game->map->x;
 				game->player_y = game->map->y;
 				game->player++;
-			}	
+			}
 			if (game->map->outline[game->map->y][game->map->x] == 'E')
 				game->exit++;
 			if (game->map->outline[game->map->y][game->map->x] == 'C')

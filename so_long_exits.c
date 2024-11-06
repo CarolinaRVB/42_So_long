@@ -42,12 +42,12 @@ void	floodcheck(t_game *game, int x, int y, char **nmap)
 	}
 	else if (nmap[y][x] == 'C')
 		game->colexit--;
-	else if (nmap[y][x]== 'E')
+	else if (nmap[y][x] == 'E')
 	{
 		game->vale = 1;
 		return ;
 	}
-	nmap[y][x]  = 'x';
+	nmap[y][x] = 'x';
 	floodcheck(game, x + 1, y, nmap);
 	floodcheck(game, x - 1, y, nmap);
 	floodcheck(game, x, y + 1, nmap);

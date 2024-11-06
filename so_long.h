@@ -95,7 +95,6 @@ typedef struct s_game
 	int		tile;
 	int		move_count;
 	int		flag;
-	
 	t_map	*map;
 }	t_game;
 

@@ -84,6 +84,7 @@ void	free_mapcpy(char **nmap)
 	}
 	free(nmap);
 }
+
 void	put_enemy_img(t_game *game)
 {
 	void	*img;

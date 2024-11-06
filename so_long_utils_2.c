@@ -50,7 +50,7 @@ void	move_left(t_game *game, int *x, int *x_pre)
 		*x_pre = *x;
 		*x = next_x;
 		if (game->map->outline[game->player_y][next_x] == 'C')
-		{	
+		{
 			game->collectible = game->collectible - 1;
 			game->map->outline[game->player_y][next_x] = '0';
 		}
@@ -100,7 +100,7 @@ void	move_down(t_game *game, int *y, int *y_pre)
 		*y_pre = *y;
 		*y = next_y;
 		if (game->map->outline[next_y][game->player_x] == 'C')
-		{	
+		{
 			game->collectible = game->collectible - 1;
 			game->map->outline[next_y][game->player_x] = '0';
 		}
